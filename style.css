@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+:root{
+	--color-text: #E0FFFF;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: rgb(0,65,106);
+	background-color: linear-gradient(90deg, rgba(0,65,106,1) 17%, rgba(7,117,177,0.9724264705882353) 39%);
+	color: var(--color-text);
+	font-family: 'Lato', sans-serif;
+}
+
+header{
+	margin: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+nav ul, h1{
+	padding: 2rem;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+h1{
+	font-style: italic;
+	margin: auto;
+	margin: 0px;
+}
+
+ul a{
+	display: flex;
+	text-decoration: none;
+	padding: 0.5rem;
+}
+ul a:hover{
+	text-decoration: underline;
+	color: yellow;
+}
+
+/*sobre mim*/
+
+#sobreMim{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2.5rem;
+	margin-bottom: 6rem;
+}
+#sobreMim img{
+	width: 200px;
+	height: 250px;
+	align-items: center;
+	border-radius: 25px;
+	box-shadow: 2px 2px skyblue;
+	/*margin-bottom: 250px;*/
+}
+.photo{
+	display: flex;
+	justify-content: center;
+}
+.front, .back{
+	position: absolute;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transition: all 1s ease;
+}
+
+.front{
+	transform: rotateY(0deg);
+}
+.back{
+	transform: rotateY(180deg);
+}
+
+.photo:hover .front{
+	transform: rotateY(-180deg);
+}
+
+.photo:hover .back{
+	transform: rotateY(0deg);
+}
+
+
+.sobreMimRedes{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 260px;
+}
+.sobreMimRedes a{
+	margin: 10px;
+	font-size: 1.5em;
+}
+#textoSobre{
+	font-size: 1.1rem;
+	text-align: center;
+	line-height: 1.8;
+	word-spacing: 1px;
+	width: 70%;
+}
+#textoSobre SPAN{
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+/*--------habilidades--------*/
+#habilidades, #projetos{
+	margin: 2rem;
+}
+.container_habilidades{
+	padding: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.container_habilidades img{
+	width: 200px;
+	height: 200px;
+}
+.container_habilidades div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+}
+
+/*----------FOOTER----------*/
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3.5rem;
+}
+.pisca{
+	animation: piscar 2s linear infinite;
+}
+@keyframes piscar {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+footer h2{
+	font-size: 1.5rem;
+}
+.dados{
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+footer div{
+	padding: 10px;
+}
+
+footer div a{
+	text-decoration: none;
+	font-size: 1rem;
+}
+#redesSociais{
+	display: flex;
+}
+#redesSociais a{
+	margin-right: 2rem;
+	font-size: 1rem;
+}
+#redesSociais a:hover{
+	color: yellow;
+}
+#fraseFinal{
+	font-style: italic;
+	font-size: 15px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media(max-width: 402px){
+	h1{
+		font-size: 25px;
+		padding: 0px;
+		margin: auto;
+	}
+}
+@media(max-width: 297px){
+	h1{
+		font-size: 20px;
+		padding: 0px;
+		margin: auto;
+	}
+}
+@media(max-width: 320px){
+	ul a{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media(max-width: 280px){
+	#textoSobre{
+		font-size: 1rem;
+	}
+}
+@media(max-width: 320px){
+	.container_habilidades img{
+		width: 150px;
+		height: 150px;
+	}
+}
+@media(max-width: 330px){
+	footer div a, #redesSociais a{
+		font-size: 1rem;
+	}
+}
+
+
+/*barra de rolagem*/
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-track{
+	background-color: rgb(0,65,106);
+	background-color: linear-gradient(90deg, rgba(0,65,106,1) 17%, rgba(7,117,177,0.9724264705882353) 39%);
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 35px;
+	background-color: rgb(8,96,136);
+}
