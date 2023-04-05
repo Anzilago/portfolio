@@ -55,43 +55,14 @@ ul a:hover{
 #sobreMim img{
 	width: 200px;
 	height: 250px;
-	align-items: center;
-	border-radius: 25px;
+	border-radius: 50px;
 	box-shadow: 2px 2px skyblue;
-	/*margin-bottom: 250px;*/
+	margin-bottom: 10px;
 }
-.photo{
-	display: flex;
-	justify-content: center;
-}
-.front, .back{
-	position: absolute;
-	backface-visibility: hidden;
-	transform-style: preserve-3d;
-	transition: all 1s ease;
-}
-
-.front{
-	transform: rotateY(0deg);
-}
-.back{
-	transform: rotateY(180deg);
-}
-
-.photo:hover .front{
-	transform: rotateY(-180deg);
-}
-
-.photo:hover .back{
-	transform: rotateY(0deg);
-}
-
-
 .sobreMimRedes{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
-	margin-top: 260px;
 }
 .sobreMimRedes a{
 	margin: 10px;
@@ -136,15 +107,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 3.5rem;
-}
-.pisca{
-	animation: piscar 2s linear infinite;
-}
-@keyframes piscar {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+	padding: 5rem;
 }
 footer h2{
 	font-size: 1.5rem;
