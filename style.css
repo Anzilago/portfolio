@@ -115,10 +115,10 @@ ul a:hover{
 	align-items: center;
 	margin-right: 2rem;
 }
-#CalcularServicos, #calcularGorjetas{
+#CalcularServicos, #calcularGorjetas, #siteEsportes{
 	display: flex;
 }
-#CalcularServicos img, #calcularGorjetas img{
+#CalcularServicos img, #calcularGorjetas img, #siteEsportes img{
 	margin-top: .5rem;
 	width: 250px;
 	height: 350px;
@@ -126,9 +126,9 @@ ul a:hover{
 	border-radius: 5px;
 	box-shadow: -2px 2px 3px black;
 }
-#CalcularServicos img:hover, #calcularGorjetas img:hover{
+/*#CalcularServicos img:hover, #calcularGorjetas img:hover, #siteEsportes img:hover{
 	box-shadow: 0 0 4px 5px rgba(8, 96, 136, 1.0);
-}
+}*/
 .cardsProjetos:hover :not(:hover){
 	opacity: 0.8;
 }
