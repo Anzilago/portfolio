@@ -103,32 +103,38 @@ ul a:hover{
 	padding: 2rem;
 }
 /*-----------------PROJETOS------------------------*/
-#projetos{
-	
-}
+
 .cardsProjetos{
 	margin-top: 2.5rem;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .cardsProjetos div{
 	flex-direction: column;
 	align-items: center;
+	margin-right: 2rem;
 }
-#CalcularServicos{
+#CalcularServicos, #calcularGorjetas{
 	display: flex;
 }
-#CalcularServicos img{
+#CalcularServicos img, #calcularGorjetas img{
 	margin-top: .5rem;
 	width: 250px;
+	height: 350px;
 	border: 1px solid gray;
 	border-radius: 5px;
 	box-shadow: -2px 2px 3px black;
 }
-#CalcularServicos img:hover{
+#CalcularServicos img:hover, #calcularGorjetas img:hover{
 	box-shadow: 0 0 4px 5px rgba(8, 96, 136, 1.0);
 }
-
+.cardsProjetos:hover :not(:hover){
+	opacity: 0.8;
+}
+.cardsProjetos img:hover{
+	scale: 1.1;
+}
 
 
 /*----------FOOTER----------*/
