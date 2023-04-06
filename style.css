@@ -154,6 +154,7 @@ footer div a{
 	display: flex;
 	margin-top: 1rem;
 	margin-bottom: 3rem;
+	flex-wrap: wrap;
 }
 #redesSociais a{
 	margin-right: 2rem;
@@ -170,18 +171,23 @@ footer div a{
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
+@media(max-width: 440px){
+	#redesSociais{
+		flex-direction: column;
+		align-items: center;
+	}
+
 @media(max-width: 402px){
 	h1{
 		font-size: 25px;
 		padding: 0px;
 		margin: auto;
 	}
+
 }
-@media(max-width: 297px){
-	h1{
-		font-size: 20px;
-		padding: 0px;
-		margin: auto;
+@media(max-width: 330px){
+	footer div a, #redesSociais a{
+		font-size: 1rem;
 	}
 }
 @media(max-width: 320px){
@@ -190,25 +196,28 @@ footer div a{
 		flex-direction: column;
 		align-items: center;
 	}
-}
-@media(max-width: 280px){
-	#textoSobre{
-		font-size: 1rem;
-	}
-}
-@media(max-width: 320px){
 	.container_habilidades img{
 		width: 150px;
 		height: 150px;
 	}
 }
-@media(max-width: 330px){
-	footer div a, #redesSociais a{
+@media(max-width: 297px){
+	h1{
+		font-size: 20px;
+		padding: 0px;
+		margin: auto;
+}
+
+@media(max-width: 280px){
+	#textoSobre{
 		font-size: 1rem;
 	}
 }
 
 
+
+
+}
 /*barra de rolagem*/
 ::-webkit-scrollbar{
 	width: 15px;
