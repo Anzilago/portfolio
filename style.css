@@ -3,15 +3,16 @@
 :root{
 	--color-text: #E0FFFF;
 }
-
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: rgb(0,65,106);
-	background-color: linear-gradient(90deg, rgba(0,65,106,1) 17%, rgba(7,117,177,0.9724264705882353) 39%);
 	color: var(--color-text);
 	font-family: 'Lato', sans-serif;
+}
+body{
+	background: rgb(0,65,106);
+	background: linear-gradient(90deg, rgba(0,65,106,1) 25%, rgba(11,141,212,0.9724264705882353) 82%);
 }
 
 header{
