@@ -92,8 +92,8 @@ ul a:hover{
 	flex-wrap: wrap;
 }
 .container_habilidades img{
-	width: 200px;
-	height: 200px;
+	width: 10rem;
+	height: 10rem;
 }
 .container_habilidades div{
 	display: flex;
@@ -101,6 +101,34 @@ ul a:hover{
 	align-items: center;
 	padding: 2rem;
 }
+/*-----------------PROJETOS------------------------*/
+#projetos{
+	
+}
+.cardsProjetos{
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: space-around;
+}
+.cardsProjetos div{
+	flex-direction: column;
+	align-items: center;
+}
+#CalcularServicos{
+	display: flex;
+}
+#CalcularServicos img{
+	margin-top: .5rem;
+	width: 250px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	box-shadow: -2px 2px 3px black;
+}
+#CalcularServicos img:hover{
+	box-shadow: 0 0 4px 5px rgba(8, 96, 136, 1.0);
+}
+
+
 
 /*----------FOOTER----------*/
 footer{
@@ -136,6 +164,8 @@ footer div a{
 	color: yellow;
 }
 #fraseFinal{
+	width: 100%;
+	text-align: center;
 	font-style: italic;
 	font-size: 15px;
 }
