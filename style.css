@@ -129,12 +129,6 @@ ul a:hover{
 /*#CalcularServicos img:hover, #calcularGorjetas img:hover, #siteEsportes img:hover{
 	box-shadow: 0 0 4px 5px rgba(8, 96, 136, 1.0);
 }*/
-.cardsProjetos:hover :not(:hover){
-	opacity: 0.8;
-}
-.cardsProjetos img:hover{
-	scale: 1.1;
-}
 
 
 /*----------FOOTER----------*/
