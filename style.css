@@ -45,7 +45,11 @@ ul a:hover{
 }
 
 /*sobre mim*/
-
+.container-sobremim{
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
 #sobreMim{
 	display: flex;
 	flex-direction: column;
@@ -70,11 +74,14 @@ ul a:hover{
 	font-size: 1.5em;
 }
 #textoSobre{
+	width: 50%;
 	font-size: 1.1rem;
-	text-align: center;
+	text-align: justify;
 	line-height: 1.8;
 	word-spacing: 1px;
-	width: 70%;
+}
+#textoSobre p{
+	margin-top: .3rem;
 }
 #textoSobre SPAN{
 	text-decoration: underline;
@@ -97,35 +104,53 @@ ul a:hover{
 	height: 10rem;
 }
 .container_habilidades div{
+	border: 1px solid rgb(8, 96, 136);
+	border-radius: 8px;
+	box-shadow: 2px 2px 3px rgb(8, 96, 136);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem;
+	padding: 1rem;
 }
 /*-----------------PROJETOS------------------------*/
-
+.container_cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "cardsProjetos cardsProjetos";
+	flex: 1 0 auto;
+}
 .cardsProjetos{
-	margin-top: 2.5rem;
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-top: 2.5rem; 
+	width: 90%
+	margin: auto;
+	margin-top: 2rem; 
+	grid-area: cardsProjetos;
+	
 }
 .cardsProjetos div{
+
 	flex-direction: column;
 	align-items: center;
 	margin-right: 2rem;
+
+}
+.cardsProjetos div img{
+	width: 30rem;
+	height: 27rem;
 }
 #CalcularServicos, #calcularGorjetas, #siteEsportes{
 	display: flex;
 }
-#CalcularServicos img, #calcularGorjetas img, #siteEsportes img{
+/*#CalcularServicos img, #calcularGorjetas img, #siteEsportes img{
 	margin-top: .5rem;
 	width: 250px;
 	height: 350px;
 	border: 1px solid gray;
 	border-radius: 5px;
 	box-shadow: -2px 2px 3px black;
-}
+}*/
 /*#CalcularServicos img:hover, #calcularGorjetas img:hover, #siteEsportes img:hover{
 	box-shadow: 0 0 4px 5px rgba(8, 96, 136, 1.0);
 }*/
@@ -136,7 +161,10 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 5rem;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 2rem;
+	text-align: center;
 }
 footer h2{
 	font-size: 1.5rem;
@@ -162,12 +190,6 @@ footer div a{
 }
 #redesSociais a:hover{
 	color: yellow;
-}
-#fraseFinal{
-	width: 100%;
-	text-align: center;
-	font-style: italic;
-	font-size: 15px;
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
@@ -201,23 +223,54 @@ footer div a{
 		height: 150px;
 	}
 }
-@media(max-width: 297px){
+@media(max-width: 320px){
 	h1{
 		font-size: 20px;
 		padding: 0px;
 		margin: auto;
+	}
+
 }
 
 @media(max-width: 280px){
-	#textoSobre{
+	h1{
 		font-size: 1rem;
 	}
+	.container-sobremim{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+	}
+	#sobreMim img{
+	width: 5rem;
+	height: 4.5rem;
+	}
+	.container_habilidades img{
+	width: 5rem;
+	height: 5rem;
+	}
+	#textoSobre{
+		font-size: 1rem;
+		width: 100%;
+	}
+	h2{
+		font-size: 10px;
+	}
+	.cardsProjetos div img{
+		width: 5rem;
+		height: 4rem;
+	}
+	#fraseFinal{
+		font-size: 10px;
+	}
+
+
 }
 
 
 
 
-}
 /*barra de rolagem*/
 ::-webkit-scrollbar{
 	width: 15px;

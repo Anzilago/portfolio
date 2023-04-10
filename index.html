@@ -22,21 +22,24 @@
 	<main>
 		
 		<section id="sobreMim">
-			<div>
+			<div class="container-sobremim">
 				<div>
-					<img src="perfil.jpeg">
+					<div>
+						<img src="perfil.jpeg">
+					</div>
+					<div class="sobreMimRedes">
+						<p><a target="_blank" href="https://www.linkedin.com/in/henrique-anzilago-306aa4192/" blank><i class="bi bi-linkedin"></i></a></p>
+						<p><a target="_blank" href="https://github.com/Anzilago"><i class="bi bi-github"></i></a></p>				
+					</div>
 				</div>
-				<div class="sobreMimRedes">
-					<p><a target="_blank" href="https://www.linkedin.com/in/henrique-anzilago-306aa4192/" blank><i class="bi bi-linkedin"></i></a></p>
-					<p><a target="_blank" href="https://github.com/Anzilago"><i class="bi bi-github"></i></a></p>				
+				<hr>
+				<div id="textoSobre">
+					<p>Olá, meu nome é Henrique e sou formado em <span>Análise de Sistemas.</span></p>
+					<p>Atualmente, estou cursando <span>pós-graduação em Front-End.</span></p>
+					<p>Também possuo formação em Gestão Financeira e tenho MBA em Administração Hospitalar.</p>
+					<p>Hoje atuo como coordenador de faturamento em um hospital.</p>
+					<p>Tenho habilidades em liderança e já trabalhei no setor de planejamento e qualidade, onde desenvolvi habilidades em gestão de processos e melhoria contínua. Além disso, aplico diversos conhecimentos adquiridos em criação de projetos web, automação com Excel e análise de dados para melhorar os processos do setor e contribuir para o sucesso do hospital. Inclusive, construo dashboards para monitoramento e análise de indicadores. Sou uma pessoa otimista e estou sempre buscando novos desafios para me desenvolver profissionalmente.</p>
 				</div>
-			</div>	
-			<div id="textoSobre">
-				<p>Olá, meu nome é Henrique e sou formado em <span>Análise de Sistemas.</span></p>
-				<p>Atualmente, estou cursando <span>pós-graduação em Front-End.</span></p>
-				<p>Também possuo formação em Gestão Financeira e tenho MBA em Administração Hospitalar.</p>
-				<p>Hoje atuo como coordenador de faturamento em um hospital.</p>
-				<p>Tenho habilidades em liderança e já trabalhei no setor de planejamento e qualidade, onde desenvolvi habilidades em gestão de processos e melhoria contínua. Além disso, aplico diversos conhecimentos adquiridos em criação de projetos web, automação com Excel e análise de dados para melhorar os processos do setor e contribuir para o sucesso do hospital. Inclusive, construo dashboards para monitoramento e análise de indicadores. Sou uma pessoa otimista e estou sempre buscando novos desafios para me desenvolver profissionalmente.</p>
 			</div>
 
 		</section>
@@ -60,22 +63,22 @@
 		<section id="projetos">
 			<hr>
 			<h2>PROJETOS</h2>
-
-			<div class="cardsProjetos">
-				<div id="siteEsportes">
-					<h3>SITE DE ESPORTES</h3>
-					<a href="https://anzilago.github.io/site-esportes/"><img src="esporte.png"></a>		
-				</div>	
-				<div id="CalcularServicos">
-					<h3>CALCULADORA TABELA SUS</h3>
-					<a href="https://anzilago.github.io/calculo-servicos-prestados/"><img src="calculo.png"></a>		
+			<div class="container_cards">
+				<div class="cardsProjetos">
+					<div id="siteEsportes" class="grid">
+						<h3>SITE DE ESPORTES</h3>
+						<a href="https://anzilago.github.io/site-esportes/"><img src="esporte.jpg"></a>		
+					</div>	
+					<div id="CalcularServicos" class="grid">
+						<h3>CALCULADORA TABELA SUS</h3>
+						<a href="https://anzilago.github.io/calculo-servicos-prestados/"><img src="calculo.png"></a>		
+					</div>
+					<div id="calcularGorjetas"  class="grid">
+						<h3>CALCULADORA DE GORJETAS</h3>
+						<a href="https://anzilago.github.io/calculadora-gorjeta/"><img src="gorjeta.jpg"></a>		
+					</div>				
 				</div>
-				<div id="calcularGorjetas">
-					<h3>CALCULADORA DE GORJETAS</h3>
-					<a href="https://anzilago.github.io/calculadora-gorjeta/"><img src="gorjeta.png"></a>		
-				</div>				
 			</div>
-			
 		</section>
 
 	</main>
@@ -83,14 +86,12 @@
 	<footer id="contato">
 		
 		<h2>CONTATO</h2>
-			<div id="redesSociais">
-				<p><a href="#"><i class="bi bi-envelope-at"></i> henrique.anzilago@gmail.com</a></p>
-				<p><a target="_blank" href="https://www.linkedin.com/in/henrique-anzilago-306aa4192/" blank><i class="bi bi-linkedin"></i> LINKEDIN</a></p>
-				<p><a target="_blank" href="https://github.com/Anzilago"><i class="bi bi-github"></i> GITHUB</a></p>
-			</div>
-		<div id="fraseFinal">
-			<p>"A melhor maneira de começar algo é deixar de falar sobre isso e começar a fazer." - Walt Disney</p>
+		<div id="redesSociais">
+			<p><a href="#"><i class="bi bi-envelope-at"></i> henrique.anzilago@gmail.com</a></p>
+			<p><a target="_blank" href="https://www.linkedin.com/in/henrique-anzilago-306aa4192/" blank><i class="bi bi-linkedin"></i> LINKEDIN</a></p>
+			<p><a target="_blank" href="https://github.com/Anzilago"><i class="bi bi-github"></i> GITHUB</a></p>
 		</div>
+		<p id="fraseFinal">"A melhor maneira de começar algo é deixar de falar sobre isso e começar a fazer." - Walt Disney</p>
 	</footer>
 </body>
 </html>
