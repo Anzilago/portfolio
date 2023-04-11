@@ -196,41 +196,13 @@ footer div a{
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-@media(max-width: 440px){
-	#redesSociais{
-		flex-direction: column;
-		align-items: center;
+@media(max-width: 480px){
+	nav ul, h1{
+		padding: 1rem;
 	}
-
-@media(max-width: 402px){
-	h1{
-		font-size: 25px;
-		padding: 0px;
-		margin: auto;
-	}
-
-}
-@media(max-width: 330px){
-	footer div a, #redesSociais a{
-		font-size: 1rem;
-	}
-}
-@media(max-width: 320px){
-
-	.container_habilidades img{
-		width: 150px;
-		height: 150px;
-	}
-}
-
-
-@media(max-width: 320px){
-	h1{
-		font-size: 1rem;
-	}
-	ul a{
-		flex-direction: column;
-		margin-right: 2rem;
+	#menu ul a{
+		font-size: .9rem;
+		padding: .3rem;
 	}
 	#sobreMim{
 		margin-bottom: 1rem;
@@ -243,7 +215,7 @@ footer div a{
 	}
 	#sobreMim img{
 		width: 9rem;
-		height: 8.5rem;
+		height: 10rem;
 	}
 	#textoSobre{
 		font-size: 1rem;
@@ -261,8 +233,8 @@ footer div a{
 		margin-bottom: 1rem;
 	}
 	.cardsProjetos div img{
-		width: 12rem;
-		height: 10rem;
+		width: 18rem;
+		height: 16rem;
 	}
 	.grid{
 		margin: auto;
@@ -273,11 +245,31 @@ footer div a{
 }
 
 
+@media(max-width: 320px){
+	ul a{
+		padding: 0;
+	}
+	h1{
+		font-size: 1rem;
+	}
+
+	#sobreMim img{
+		width: 8.5rem;
+		height: 9rem;
+	}
+
+	.cardsProjetos div img{
+		width: 12rem;
+		height: 10rem;
+	}
+}
+
+
 @media(max-width: 280px){
 
 	#sobreMim img{
-	width: 5rem;
-	height: 4.5rem;
+	width: 7rem;
+	height: 9rem;
 	}
 
 	.container_habilidades img{
